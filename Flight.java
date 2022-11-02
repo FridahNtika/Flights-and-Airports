@@ -5,8 +5,8 @@ import java.util.Scanner;
  * origin and destination cities, the name of the airline and the flight
  * number
  *
- * @Fridah Karimi Ntika
- * @09/22/2022
+ * @author Fridah Karimi Ntika
+ * @version 09/22/2022
  */
 
 public class Flight
@@ -107,7 +107,7 @@ public class Flight
      */
     public static boolean stopOver(Flight f1, Flight f2)
     {
-       if (f1.destination == f2.origin)
+       if (f1.destination.equals(f2.origin))
        {
            return true;
        }
